@@ -125,7 +125,8 @@ def get_weibo(id,file):
     print('共计：%s'%count)
 
 if __name__=="__main__":
-    id_list = ['1852299857','101174']
+    # 从https://weibo.com/101174?is_hot=1 提取 uID = 101174  https://weibo.com/u/1852299857?is_hot=1 提取uid 1852299857
+    id_list = ['1852299857','101174']  
     for id in id_list:
         file=id+ "%s.txt"%datetime.datetime.now().strftime('[%Y-%m-%d %H %M %S]')
         get_userInfo(id)
