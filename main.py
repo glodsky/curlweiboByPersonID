@@ -125,7 +125,7 @@ def get_weibo(id,file):
     print('共计：%s'%count)
 
 if __name__=="__main__":
-    id_list = ['3283149014','6006394101']
+    id_list = ['1852299857','101174']
     for id in id_list:
         file=id+ "%s.txt"%datetime.datetime.now().strftime('[%Y-%m-%d %H %M %S]')
         get_userInfo(id)
